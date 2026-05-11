@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Biodata Diri</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#0f172a;
+    overflow-x:hidden;
+    color:white;
+}
+
+/* BACKGROUND */
+
+.blur{
+    position:fixed;
+    width:350px;
+    height:350px;
+    border-radius:50%;
+    filter:blur(160px);
+    opacity:0.25;
+    z-index:-1;
+}
+
+.blur1{
+    background:#00d4ff;
+    top:-100px;
+    left:-100px;
+}
+
+.blur2{
+    background:#7f5af0;
+    bottom:-100px;
+    right:-100px;
+}
+
+.blur3{
+    background:#ff4ecd;
+    top:40%;
+    left:35%;
+}
+
+/* CONTAINER */
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    padding:50px 0;
+}
+
+/* CARD */
+
+.card{
+
+    width:100%;
+
+    display:grid;
+    grid-template-columns:1fr 1.2fr;
+
+    background:rgba(255,255,255,0.05);
+
+    border:1px solid rgba(255,255,255,0.08);
+
+    border-radius:35px;
+
+    overflow:hidden;
+
+    backdrop-filter:blur(15px);
+
+    box-shadow:0 20px 40px rgba(0,0,0,0.4);
+
+}
+
+/* LEFT */
+
+.left{
+
+    background:linear-gradient(135deg,#00d4ff,#7f5af0);
+
+    padding:40px;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+}
+
+.left img{
+
+    width:230px;
+    height:230px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    border:6px solid white;
+
+    margin-bottom:25px;
+
+    box-shadow:0 15px 30px rgba(0,0,0,0.4);
+}
+
+.left h1{
+    font-size:40px;
+    margin-bottom:10px;
+}
+
+.left p{
+    font-size:18px;
+    opacity:0.9;
+}
+
+/* RIGHT */
+
+.right{
+    padding:50px;
+}
+
+.tag{
+    display:inline-block;
+
+    padding:10px 18px;
+
+    border-radius:50px;
+
+    background:linear-gradient(to right,#00d4ff,#7f5af0);
+
+    margin-bottom:25px;
+
+    font-size:14px;
+    font-weight:bold;
+}
+
+.right h2{
+    font-size:45px;
+    margin-bottom:20px;
+}
+
+.right-desc{
+    color:#cbd5e1;
+    line-height:1.9;
+    margin-bottom:35px;
+}
+
+/* INFO */
+
+.info-box{
+
+    display:grid;
+    grid-template-columns:1fr 1fr;
+
+    gap:20px;
+}
+
+.info{
+
+    background:rgba(255,255,255,0.05);
+
+    border:1px solid rgba(255,255,255,0.08);
+
+    padding:20px;
+
+    border-radius:20px;
+
+    transition:0.3s;
+}
+
+.info:hover{
+    transform:translateY(-5px);
+    border-color:#00d4ff;
+}
+
+.info h3{
+    color:#00d4ff;
+    margin-bottom:10px;
+}
+
+.info p{
+    color:#e2e8f0;
+}
+
+/* SOCIAL */
+
+.social{
+
+    margin-top:35px;
+
+    display:flex;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.social a{
+
+    text-decoration:none;
+
+    padding:12px 18px;
+
+    border-radius:14px;
+
+    background:rgba(255,255,255,0.08);
+
+    color:white;
+
+    transition:0.3s;
+}
+
+.social a:hover{
+
+    background:#00d4ff;
+
+    transform:translateY(-4px);
+}
+
+/* RESPONSIVE */
+
+@media(max-width:950px){
+
+    .card{
+        grid-template-columns:1fr;
+    }
+
+    .right h2{
+        font-size:35px;
+    }
+
+}
+
+@media(max-width:600px){
+
+    .info-box{
+        grid-template-columns:1fr;
+    }
+
+    .left h1{
+        font-size:32px;
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="blur blur1"></div>
+<div class="blur blur2"></div>
+<div class="blur blur3"></div>
+
+<div class="container">
+
+    <div class="card">
+
+        <!-- LEFT -->
+
+        <div class="left">
+
+            <!-- GANTI GAMBAR INI -->
+            <img src="https://uploads.onecompiler.io/44mjvtdsb/44nxqavdu/Screenshot_2024_0324_212526.png"
+
+            <h1>Nama Kamu</h1>
+
+            <p>
+                Student • English Learner • Web Designer
+            </p>
+
+        </div>
+
+        <!-- RIGHT -->
+
+        <div class="right">
+
+            <div class="tag">
+                ✨ My Biodata
+            </div>
+
+            <h2>Hello Everyone 👋</h2>
+
+            <p class="right-desc">
+
+                Halo! Saya adalah seseorang yang tertarik
+                pada dunia teknologi, desain web, dan bahasa Inggris.
+                Saya suka belajar hal baru dan membuat project kreatif
+                menggunakan HTML, CSS, dan JavaScript.
+
+            </p>
+
+            <!-- INFO -->
+
+            <div class="info-box">
+
+                <div class="info">
+
+                    <h3>📛 Nama</h3>
+
+                    <p>REHAN ALFIANSYAH</p>
+
+                </div>
+
+                <div class="info">
+
+                    <h3>🎂 Umur</h3>
+
+                    <p>17 Tahun</p>
+
+                </div>
+
+                <div class="info">
+
+                    <h3>🏫 Sekolah</h3>
+
+                    <p>SMK / SMA</p>
+
+                </div>
+
+                <div class="info">
+
+                    <h3>🌍 Hobi</h3>
+
+                    <p>Coding & English</p>
+
+                </div>
+
+                <div class="info">
+
+                    <h3>📧 Email</h3>
+
+                    <p>jagongarang@anda.com</p>
+
+                </div>
+
+                <div class="info">
+
+                    <h3>📍 Address</h3>
+
+                    <p>Indonesia</p>
+
+                </div>
+
+            </div>
+
+            <!-- SOCIAL -->
+
+            <div class="social">
+
+                <a href="#">Instagram</a>
+
+                <a href="#">TikTok</a>
+
+                <a href="#">YouTube</a>
+
+                <a href="#">WhatsApp</a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

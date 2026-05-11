@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>English Grammar</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#0f172a;
+    overflow-x:hidden;
+    color:white;
+}
+
+/* BACKGROUND GLOW */
+
+.blur{
+    position:fixed;
+    width:350px;
+    height:350px;
+    border-radius:50%;
+    filter:blur(150px);
+    opacity:0.3;
+    z-index:-1;
+}
+
+.blur1{
+    background:#00c6ff;
+    top:-100px;
+    left:-100px;
+}
+
+.blur2{
+    background:#7f5af0;
+    bottom:-100px;
+    right:-100px;
+}
+
+/* HEADER */
+
+header{
+    text-align:center;
+    padding:90px 20px;
+}
+
+header h1{
+    font-size:65px;
+    font-weight:700;
+    background:linear-gradient(to right,#00c6ff,#7f5af0);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    margin-bottom:20px;
+}
+
+header p{
+    color:#cbd5e1;
+    font-size:20px;
+}
+
+/* CONTAINER */
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    padding-bottom:80px;
+}
+
+/* CARD */
+
+.card{
+    background:rgba(255,255,255,0.05);
+    border:1px solid rgba(255,255,255,0.1);
+    border-radius:30px;
+    overflow:hidden;
+    margin-bottom:40px;
+    backdrop-filter:blur(12px);
+    transition:0.4s;
+    box-shadow:0 15px 35px rgba(0,0,0,0.4);
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card img{
+    width:100%;
+    height:260px;
+    object-fit:cover;
+}
+
+.content{
+    padding:35px;
+}
+
+.content h2{
+    font-size:38px;
+    margin-bottom:18px;
+    color:#00c6ff;
+}
+
+.content p{
+    color:#e2e8f0;
+    line-height:1.9;
+    margin-bottom:18px;
+    font-size:17px;
+}
+
+/* BOX */
+
+.box{
+    background:#111827;
+    border-left:5px solid #00c6ff;
+    padding:18px;
+    border-radius:18px;
+    margin:20px 0;
+}
+
+.box h3{
+    color:#ffd369;
+    margin-bottom:10px;
+}
+
+.box p{
+    margin:8px 0;
+}
+
+/* TABLE */
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
+    overflow:hidden;
+    border-radius:15px;
+}
+
+table th{
+    background:#00c6ff;
+    color:white;
+    padding:15px;
+}
+
+table td{
+    padding:15px;
+    background:rgba(255,255,255,0.05);
+    color:#e2e8f0;
+    text-align:center;
+}
+
+/* FOOTER */
+
+footer{
+    text-align:center;
+    padding:40px;
+    color:#94a3b8;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+    header h1{
+        font-size:42px;
+    }
+
+    .content h2{
+        font-size:30px;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="blur blur1"></div>
+<div class="blur blur2"></div>
+
+<header>
+    <h1>ENGLISH GRAMMAR</h1>
+    <p>Learn Grammar Easily, Beautifully, and Smartly ✨</p>
+</header>
+
+<div class="container">
+
+    <!-- CARD 1 -->
+
+    <div class="card">
+
+        <img src="https://images.unsplash.com/photo-1455390582262-044cdead277a?q=80&w=1200" alt="Grammar">
+
+        <div class="content">
+
+            <h2>What is Grammar?</h2>
+
+            <p>
+                Grammar adalah aturan dalam bahasa Inggris yang digunakan
+                untuk menyusun kata menjadi kalimat yang benar dan mudah dipahami.
+                Grammar membantu kita berbicara, menulis, membaca, dan mendengar
+                bahasa Inggris dengan lebih baik.
+            </p>
+
+            <div class="box">
+                <h3>Simple Example</h3>
+
+                <p>❌ She go to school.</p>
+                <p>✅ She goes to school.</p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- CARD 2 -->
+
+    <div class="card">
+
+        <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=1200" alt="Parts of Speech">
+
+        <div class="content">
+
+            <h2>Parts of Speech</h2>
+
+            <p>
+                Dalam grammar terdapat beberapa jenis kata yang memiliki fungsi berbeda.
+                Ini disebut Parts of Speech.
+            </p>
+
+            <table>
+
+                <tr>
+                    <th>Type</th>
+                    <th>Function</th>
+                    <th>Example</th>
+                </tr>
+
+                <tr>
+                    <td>Noun</td>
+                    <td>Nama benda/orang</td>
+                    <td>Book, Teacher</td>
+                </tr>
+
+                <tr>
+                    <td>Verb</td>
+                    <td>Kata kerja</td>
+                    <td>Eat, Study</td>
+                </tr>
+
+                <tr>
+                    <td>Adjective</td>
+                    <td>Kata sifat</td>
+                    <td>Beautiful, Smart</td>
+                </tr>
+
+                <tr>
+                    <td>Adverb</td>
+                    <td>Keterangan</td>
+                    <td>Quickly, Slowly</td>
+                </tr>
+
+            </table>
+
+        </div>
+    </div>
+
+    <!-- CARD 3 -->
+
+    <div class="card">
+
+        <img src="https://images.unsplash.com/photo-1513258496099-48168024aec0?q=80&w=1200" alt="Sentence">
+
+        <div class="content">
+
+            <h2>Sentence Structure</h2>
+
+            <p>
+                Struktur kalimat dasar bahasa Inggris biasanya menggunakan pola:
+            </p>
+
+            <div class="box">
+
+                <h3>Basic Formula</h3>
+
+                <p>Subject + Verb + Object</p>
+
+            </div>
+
+            <div class="box">
+
+                <h3>Examples</h3>
+
+                <p>• I play football.</p>
+                <p>• She reads a book.</p>
+                <p>• They study English.</p>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- CARD 4 -->
+
+    <div class="card">
+
+        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1200" alt="Grammar Tips">
+
+        <div class="content">
+
+            <h2>Grammar Tips</h2>
+
+            <p>
+                Banyak orang menghafal grammar tetapi sulit menggunakannya.
+                Cara terbaik adalah memahami pola lalu langsung dipraktikkan.
+            </p>
+
+            <div class="box">
+
+                <h3>Best Tips</h3>
+
+                <p>✔ Read English books</p>
+                <p>✔ Watch English movies</p>
+                <p>✔ Practice speaking daily</p>
+                <p>✔ Write simple sentences every day</p>
+
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    ✨ English Grammar Learning Website ✨
+</footer>
+
+</body>
+</html>

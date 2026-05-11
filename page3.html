@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>English Vocabulary</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#07111f;
+    color:white;
+    overflow-x:hidden;
+}
+
+/* BACKGROUND */
+
+.bg-light{
+    position:fixed;
+    width:350px;
+    height:350px;
+    border-radius:50%;
+    filter:blur(160px);
+    opacity:0.25;
+    z-index:-1;
+}
+
+.bg1{
+    background:#00d4ff;
+    top:-100px;
+    left:-100px;
+}
+
+.bg2{
+    background:#7f5af0;
+    bottom:-100px;
+    right:-100px;
+}
+
+.bg3{
+    background:#ff4ecd;
+    top:40%;
+    left:40%;
+}
+
+/* HEADER */
+
+header{
+    text-align:center;
+    padding:90px 20px 60px;
+}
+
+header h1{
+    font-size:70px;
+    font-weight:700;
+    background:linear-gradient(to right,#00d4ff,#7f5af0,#ff4ecd);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    margin-bottom:20px;
+    letter-spacing:3px;
+}
+
+header p{
+    color:#cbd5e1;
+    font-size:20px;
+}
+
+/* CONTAINER */
+
+.container{
+    width:90%;
+    max-width:1250px;
+    margin:auto;
+    padding-bottom:80px;
+}
+
+/* CARD */
+
+.card{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:25px;
+    align-items:center;
+
+    background:rgba(255,255,255,0.05);
+    border:1px solid rgba(255,255,255,0.1);
+    border-radius:30px;
+
+    overflow:hidden;
+    margin-bottom:40px;
+
+    backdrop-filter:blur(14px);
+
+    box-shadow:0 15px 35px rgba(0,0,0,0.4);
+
+    transition:0.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px) scale(1.01);
+}
+
+.card img{
+    width:100%;
+    height:100%;
+    min-height:350px;
+    object-fit:cover;
+}
+
+.content{
+    padding:35px;
+}
+
+.content h2{
+    font-size:40px;
+    margin-bottom:18px;
+    color:#00d4ff;
+}
+
+.content p{
+    line-height:1.9;
+    color:#e2e8f0;
+    margin-bottom:20px;
+    font-size:17px;
+}
+
+/* VOCAB BOX */
+
+.vocab-box{
+    background:#111827;
+    padding:18px;
+    border-radius:18px;
+    margin-bottom:15px;
+    border-left:5px solid #00d4ff;
+    transition:0.3s;
+}
+
+.vocab-box:hover{
+    transform:translateX(8px);
+}
+
+.vocab-box h3{
+    color:#ffd369;
+    margin-bottom:8px;
+    font-size:22px;
+}
+
+.vocab-box p{
+    margin:5px 0;
+}
+
+/* TAG */
+
+.tag{
+    display:inline-block;
+    padding:8px 18px;
+    background:linear-gradient(to right,#00d4ff,#7f5af0);
+    border-radius:50px;
+    margin-bottom:20px;
+    font-size:14px;
+    font-weight:bold;
+}
+
+/* FOOTER */
+
+footer{
+    text-align:center;
+    padding:40px;
+    color:#94a3b8;
+    font-size:15px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+    .card{
+        grid-template-columns:1fr;
+    }
+
+    header h1{
+        font-size:45px;
+    }
+
+    .content h2{
+        font-size:32px;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="bg-light bg1"></div>
+<div class="bg-light bg2"></div>
+<div class="bg-light bg3"></div>
+
+<header>
+
+    <h1>VOCABULARY</h1>
+
+    <p>
+        Learn New English Words Everyday ✨
+    </p>
+
+</header>
+
+<div class="container">
+
+    <!-- CARD 1 -->
+
+    <div class="card">
+
+        <img src="https://images.unsplash.com/photo-1455390582262-044cdead277a?q=80&w=1200" alt="Vocabulary">
+
+        <div class="content">
+
+            <div class="tag">Basic Vocabulary</div>
+
+            <h2>What is Vocabulary?</h2>
+
+            <p>
+                Vocabulary adalah kumpulan kata yang kita ketahui dan gunakan
+                dalam bahasa Inggris. Semakin banyak vocabulary yang dikuasai,
+                semakin mudah kita berbicara, menulis, membaca, dan memahami bahasa Inggris.
+            </p>
+
+            <div class="vocab-box">
+                <h3>Book</h3>
+                <p>📖 Arti: Buku</p>
+                <p>Example: I read a book every night.</p>
+            </div>
+
+            <div class="vocab-box">
+                <h3>Teacher</h3>
+                <p>👨‍🏫 Arti: Guru</p>
+                <p>Example: My teacher is very kind.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- CARD 2 -->
+
+    <div class="card">
+
+        <div class="content">
+
+            <div class="tag">Daily Vocabulary</div>
+
+            <h2>Daily Activity Words</h2>
+
+            <p>
+                Vocabulary tentang aktivitas sehari-hari sangat penting
+                karena sering digunakan dalam percakapan sehari-hari.
+            </p>
+
+            <div class="vocab-box">
+                <h3>Wake Up</h3>
+                <p>⏰ Arti: Bangun tidur</p>
+                <p>Example: I wake up at 5 a.m.</p>
+            </div>
+
+            <div class="vocab-box">
+                <h3>Study</h3>
+                <p>📚 Arti: Belajar</p>
+                <p>Example: They study English together.</p>
+            </div>
+
+            <div class="vocab-box">
+                <h3>Sleep</h3>
+                <p>🌙 Arti: Tidur</p>
+                <p>Example: She sleeps at 10 p.m.</p>
+            </div>
+
+        </div>
+
+        <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=1200" alt="Daily Vocabulary">
+
+    </div>
+
+    <!-- CARD 3 -->
+
+    <div class="card">
+
+        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1200" alt="Adjective">
+
+        <div class="content">
+
+            <div class="tag">Adjective Vocabulary</div>
+
+            <h2>Describing Words</h2>
+
+            <p>
+                Adjective adalah kata sifat yang digunakan
+                untuk menjelaskan benda, orang, atau tempat.
+            </p>
+
+            <div class="vocab-box">
+                <h3>Beautiful</h3>
+                <p>✨ Arti: Cantik / Indah</p>
+                <p>Example: The beach is beautiful.</p>
+            </div>
+
+            <div class="vocab-box">
+                <h3>Smart</h3>
+                <p>🧠 Arti: Pintar</p>
+                <p>Example: He is a smart student.</p>
+            </div>
+
+            <div class="vocab-box">
+                <h3>Friendly</h3>
+                <p>😊 Arti: Ramah</p>
+                <p>Example: My friend is very friendly.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- CARD 4 -->
+
+    <div class="card">
+
+        <div class="content">
+
+            <div class="tag">Vocabulary Tips</div>
+
+            <h2>How to Improve Vocabulary?</h2>
+
+            <p>
+                Banyak orang menghafal kata tetapi cepat lupa.
+                Cara terbaik adalah menggunakan vocabulary
+                dalam kehidupan sehari-hari.
+            </p>
+
+            <div class="vocab-box">
+                <h3>Best Ways</h3>
+                <p>✔ Read English books</p>
+                <p>✔ Watch English movies</p>
+                <p>✔ Listen to English songs</p>
+                <p>✔ Practice speaking everyday</p>
+                <p>✔ Write new words daily</p>
+            </div>
+
+        </div>
+
+        <img src="https://images.unsplash.com/photo-1513258496099-48168024aec0?q=80&w=1200" alt="Vocabulary Tips">
+
+    </div>
+
+</div>
+
+<footer>
+    ✨ Designed for English Vocabulary Learning ✨
+</footer>
+
+</body>
+</html>

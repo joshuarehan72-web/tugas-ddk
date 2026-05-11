@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bayar Disini</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#141e30,#243b55);
+    min-height:100vh;
+    padding:25px;
+    color:white;
+}
+
+/* TITLE */
+
+.title{
+    text-align:center;
+    margin-bottom:35px;
+}
+
+.title h1{
+    font-size:55px;
+    background:linear-gradient(to right,#00c6ff,#0072ff);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+.title p{
+    color:#d1d5db;
+    margin-top:10px;
+}
+
+/* CONTAINER */
+
+.container{
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:25px;
+}
+
+/* PRODUCT */
+
+.products{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:rgba(255,255,255,0.08);
+    border:1px solid rgba(255,255,255,0.1);
+    backdrop-filter:blur(12px);
+    border-radius:25px;
+    overflow:hidden;
+    transition:0.4s;
+    box-shadow:0 10px 25px rgba(0,0,0,0.3);
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:18px;
+}
+
+.card h2{
+    font-size:22px;
+    margin-bottom:10px;
+}
+
+.price{
+    color:#00ff99;
+    font-size:20px;
+    font-weight:bold;
+    margin-bottom:15px;
+}
+
+button{
+    border:none;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.buy-btn{
+    width:100%;
+    padding:12px;
+    border-radius:12px;
+    background:linear-gradient(to right,#00c6ff,#0072ff);
+    color:white;
+    font-weight:bold;
+    font-size:16px;
+}
+
+.buy-btn:hover{
+    opacity:0.85;
+}
+
+/* RECEIPT */
+
+.receipt{
+    background:rgba(255,255,255,0.08);
+    border:1px solid rgba(255,255,255,0.1);
+    backdrop-filter:blur(12px);
+    border-radius:25px;
+    padding:25px;
+    height:fit-content;
+    box-shadow:0 10px 25px rgba(0,0,0,0.3);
+}
+
+.receipt h2{
+    text-align:center;
+    margin-bottom:20px;
+    color:#00c6ff;
+}
+
+.info{
+    margin-bottom:20px;
+    line-height:1.8;
+    color:#e5e7eb;
+}
+
+#receipt-items{
+    margin-bottom:20px;
+}
+
+.item{
+    display:flex;
+    justify-content:space-between;
+    background:rgba(255,255,255,0.05);
+    padding:12px;
+    border-radius:10px;
+    margin-bottom:10px;
+}
+
+.total{
+    font-size:24px;
+    font-weight:bold;
+    margin-top:15px;
+    color:#00ff99;
+}
+
+.reset-btn{
+    margin-top:20px;
+    width:100%;
+    padding:14px;
+    border-radius:12px;
+    background:#ef4444;
+    color:white;
+    font-size:16px;
+    font-weight:bold;
+}
+
+.reset-btn:hover{
+    background:#dc2626;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+    .container{
+        grid-template-columns:1fr;
+    }
+
+    .title h1{
+        font-size:40px;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="title">
+    <h1>🛒 BAYAR DISINI</h1>
+    <p>Kasir Produk Belajar Bahasa Inggris Modern ✨</p>
+</div>
+
+<div class="container">
+
+    <!-- PRODUK -->
+    <div class="products">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1455390582262-044cdead277a?q=80&w=1200">
+            <div class="card-content">
+                <h2>English Grammar</h2>
+                <div class="price">Rp 75.000</div>
+                <button class="buy-btn"
+                onclick="addItem('English Grammar',75000)">
+                Tambah
+                </button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=1200">
+            <div class="card-content">
+                <h2>Vocabulary Book</h2>
+                <div class="price">Rp 65.000</div>
+                <button class="buy-btn"
+                onclick="addItem('Vocabulary Book',65000)">
+                Tambah
+                </button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1200">
+            <div class="card-content">
+                <h2>Speaking Master</h2>
+                <div class="price">Rp 95.000</div>
+                <button class="buy-btn"
+                onclick="addItem('Speaking Master',95000)">
+                Tambah
+                </button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1513258496099-48168024aec0?q=80&w=1200">
+            <div class="card-content">
+                <h2>TOEFL Preparation</h2>
+                <div class="price">Rp 120.000</div>
+                <button class="buy-btn"
+                onclick="addItem('TOEFL Preparation',120000)">
+                Tambah
+                </button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1491841550275-ad7854e35ca6?q=80&w=1200">
+            <div class="card-content">
+                <h2>Daily Conversation</h2>
+                <div class="price">Rp 80.000</div>
+                <button class="buy-btn"
+                onclick="addItem('Daily Conversation',80000)">
+                Tambah
+                </button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?q=80&w=1200">
+            <div class="card-content">
+                <h2>Basic Tenses</h2>
+                <div class="price">Rp 55.000</div>
+                <button class="buy-btn"
+                onclick="addItem('Basic Tenses',55000)">
+                Tambah
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- STRUK -->
+    <div class="receipt">
+
+        <h2>🧾 Struk Belanja</h2>
+
+        <div class="info">
+            <p><b>Tanggal:</b> <span id="date"></span></p>
+            <p><b>Expired:</b> <span id="expired"></span></p>
+        </div>
+
+        <div id="receipt-items"></div>
+
+        <div class="total">
+            Total: Rp <span id="total">0</span>
+        </div>
+
+        <button class="reset-btn" onclick="resetCart()">
+            Reset Belanja
+        </button>
+
+    </div>
+
+</div>
+
+<script>
+
+let total = 0;
+
+function addItem(name, price){
+
+    const receipt = document.getElementById("receipt-items");
+
+    const item = document.createElement("div");
+    item.classList.add("item");
+
+    item.innerHTML = `
+        <span>${name}</span>
+        <span>Rp ${price.toLocaleString()}</span>
+    `;
+
+    receipt.appendChild(item);
+
+    total += price;
+
+    document.getElementById("total").innerText =
+    total.toLocaleString();
+
+}
+
+function resetCart(){
+
+    document.getElementById("receipt-items").innerHTML = "";
+
+    total = 0;
+
+    document.getElementById("total").innerText = "0";
+
+}
+
+/* TANGGAL */
+
+const now = new Date();
+
+document.getElementById("date").innerText =
+now.toLocaleDateString("id-ID");
+
+/* EXPIRED */
+
+const expired = new Date();
+
+expired.setDate(expired.getDate() + 7);
+
+document.getElementById("expired").innerText =
+expired.toLocaleDateString("id-ID");
+
+</script>
+
+</body>
+</html>
